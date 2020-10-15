@@ -1,0 +1,171 @@
+body { 
+  font-family: 'Anton', sans-serif;
+    overflow-x: hidden;
+    height:100%;
+    overflow-x: hidden;
+}
+
+.flip-clock-label {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.text-input {
+	height:80px;
+}
+
+.h1 {
+	font-size: 40px;
+}
+
+.h2 {
+	font-size: 35px;
+}
+
+.h3 {
+	font-size: 30px;
+}
+
+.h4 {
+	font-size: 25px;
+}
+
+.h5 {
+	font-size: 20px;
+}
+
+.desc {
+	margin-bottom: 50px;
+}
+
+.clock {
+	display: inline-block;
+    width: auto;
+}
+
+#description {
+	margin-top: 50px;
+	display: block;
+	text-align: center;
+}
+
+#learn {
+	height: 100px;
+}
+
+#product {
+	height: 45vh;
+	display: block;
+	text-align: center;
+}
+
+#timer {
+	margin-top: 72vh;
+	text-align: center;
+}
+
+#timerNotStarted {
+	margin-top: 35vh;
+	text-align: center;
+}
+
+#buy {
+	height: 20vh;
+	margin-left: 4vw;
+	display: block;
+	text-align: center;
+}
+
+.display-1 {
+	margin:0;
+}
+
+#left {
+	
+}
+
+.save {
+	color: #c7102e;
+}
+
+#form > input {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#form {
+	margin-top: 16vh;
+}
+
+#form > p {
+	margin-top: 30px;
+}
+
+.complete {
+	margin-top: 20px;
+}
+
+#thanks {
+	background: url(../images/desktop-bg-buynow.png) no-repeat center center; 
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+	text-align: center;
+}
+
+#thanks > p {
+	margin-top:40vh;
+}
+
+input {
+	text-align: center;
+}
+
+#right {
+	background: url(../images/desktop-bg-buynow.png) no-repeat center center; 
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+
+/*Small Laptops and Tablets*/
+@media only screen and (max-width:991px) {
+	#description > .features  {
+		visibility: hidden;
+		height:0px;
+	}
+	#description > .h5  {
+		visibility: hidden;
+		height:0px;
+	}
+	#description > .btn  {
+		visibility: hidden;
+		height:0px;
+	}
+	#right {
+		height:95vh;
+	}
+	.btn-lg {
+		height:100px;
+	}
+	.desc {
+		margin-bottom: 0px;
+	}
+	#timer {
+		margin-top:66vh;
+	}
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+
+/*Mobile*/
+

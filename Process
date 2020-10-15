@@ -1,0 +1,18 @@
+The server launches. The server has a property called currentProduct which, at launch has properties that will tell the client to display a notstarted interface
+expires: 9am on Wednesday October 13
+mode: notStarted
+background: notStartedBG.png
+The server sets a timer for 9:00am on Wednesday
+When the timer goes off, the server sets the first product and sets a timer for 1 hour
+The server repeats this process until the array of products is finished
+When there are no more products, the server sets the product to an object that tells the client to redirect to www.thepowercentre.ca
+The client will track page visits and current active users
+
+
+The client requests the current product and the server returns an object. The object has a status property. started, notStarted, or ended.
+If the status is eventNotStarted, the client will render a preview page, 
+If the status is active, the client will display the product on the active page. 
+If the status is event ended, the client will redirect to www.thepowercentre.ca
+The client will display the active product until the timer runs out, at which time, it will ask the server for the next product.
+If the user clicks Learn More, they will be taken to our website
+If the user clicks Buy Now, the client will render a page where they can fill out their Name, email, and phone number and submit their commitment.
