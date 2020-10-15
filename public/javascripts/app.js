@@ -35,7 +35,6 @@ class App extends React.Component {
 		        success: function(response, status, http) {
 		            if (response) {
 		            	that.setState({currentProduct:response.product,mode:response.mode})
-		            	console.log('test')
 		            }
 		}});
 	}

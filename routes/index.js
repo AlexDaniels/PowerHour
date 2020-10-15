@@ -3,7 +3,7 @@ var nodemailer = require('nodemailer');
 var router = express.Router();
 var counter = 0;
 var mode = 'notStarted';
-var startDate = '2020-10-15 01:05'
+var startDate = '2020-10-15 12:00'
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -90,7 +90,7 @@ let hook9 = {
 	description:'Fishfinder with Transducer',
 	features:['9" Bright LED display','Full chartplotter','Autotuning sonar'],
 	bgImage:'../images/desktop-bg-hook9.png',
-	expiry:'2020-10-15 01:30',
+	expiry:'2020-10-15 13:00',
 	learn:'https://www.lowrance.com/lowrance/type/fishfinders-chartplotters/hook2-9-tripleshot-us-inland'
 }; products.push(hook9);
 
@@ -100,7 +100,7 @@ let inez928hd = {
 	description:'Navigation Receiver with 8" Screen',
 	features:['Bluetooth audio streaming with hands free calling','Built-in navigation','SiriusXM satellite ready'],
 	bgImage:'../images/desktop-bg-INEZ928HD.png',
-	expiry:'2020-10-15 02:00',
+	expiry:'2020-10-15 14:00',
 	learn:'https://www.cnet.com/products/alpine-ine-z928hd-navigation-system-display-8-in-dash-unit-double-din'
 }; products.push(inez928hd);
 
@@ -110,7 +110,7 @@ let risebt = {
 	description:'Wireless Bluetooth Headphones',
 	features:['Bluetooth with 12 hours playtime','Integrated microphone','Durable stainless steel design'],
 	bgImage:'../images/desktop-bg-rise.png',
-	expiry:'2020-10-15 03:00',
+	expiry:'2020-10-15 15:00',
 	learn:'https://www.thehouseofmarley.com/rise-bt-wireless-headphones.html'
 }; products.push(risebt);
 
@@ -120,7 +120,7 @@ let haxp50bt = {
 	description:'Wireless Bluetooth Headphones',
 	features:['Bluetooth with 40 hours of playtime','Quick charge in 10 minutes for 3 hours playtime','Built-in microphone'],
 	bgImage:'../images/desktop-bg-haxp50bt.png',
-	expiry:'2020-10-15 04:00',
+	expiry:'2020-10-15 16:00',
 	learn:'https://uk.jvc.com/headphone-features/xx/haxp50bt'
 }; products.push(haxp50bt);
 
@@ -130,7 +130,7 @@ let lbs5 = {
 	description:'Tabletop Bluetooth Stereo',
 	features:['Stylish wooden cabinet','Bluetooth steaming from any device','On board soft touch control functions'],
 	bgImage:'../images/desktop-bg-lbs5.png',
-	expiry:'2020-10-15 05:00',
+	expiry:'2020-10-15 17:00',
 	learn:'http://www.davecohifi.com/Assets/DNPR/LBS5.pdf'
 }; products.push(lbs5);
 
@@ -140,7 +140,7 @@ let go2 = {
 	description:'Waterproof Bluetooth Speaker',
 	features:['Waterproof design for worry-free listening by the pool or hottub','Up to 5 hours of playtime','Wireless bluetooth streaming'],
 	bgImage:'../images/desktop-bg-go2.png',
-	expiry:'2020-10-15 06:00',
+	expiry:'2020-10-15 18:00',
 	learn:'https://ca.jbl.com/JBL+GO+2.html'
 }; products.push(go2);
 
@@ -150,7 +150,7 @@ let un58nu6080 = {
 	description:'58" Smart 4K UHD TV',
 	features:['4K Resolution','Slim and stylish','Built-in wireless internet capability'],
 	bgImage:'../images/desktop-bg-un58nu6080.png',
-	expiry:'2020-10-15 07:00',
+	expiry:'2020-10-15 19:00',
 	learn:'https://www.samsung.com/ca/tvs/uhdtv-nu6080/'
 }; products.push(un58nu6080);
 
@@ -160,7 +160,7 @@ let solo5 = {
 	description:'TV Sound System with Bose Universal Remote',
 	features:['Drastically improves your TVs sound with only one speaker','Bluetooth connectivity is built in so you can stream music wirelessly','Setup is easy, with only one connection to your TV'],
 	bgImage:'../images/desktop-bg-solo5.png',
-	expiry:'2020-10-15 08:00',
+	expiry:'2020-10-15 20:00',
 	learn:'https://www.bose.ca/en_ca/products/speakers/home_theater/bose-solo-5-tv-sound-system.html?gclsrc=aw.ds&gclid=Cj0KCQjwoJX8BRCZARIsAEWBFMJkK8vXb0HBInw-LEuzQsgtGUaCD0kKp6NamDxSBLG-i3pTqWFzj9UaAv8tEALw_wcB&gclsrc=aw.ds#v=solo_5_black'
 }; products.push(solo5);
 
@@ -170,7 +170,7 @@ let revolve = {
 	description:'Portable Bluetooth Speaker',
 	features:['Waterproof and durable','Loud and clear audio quality in a small package','Stylish and portable'],
 	bgImage:'../images/desktop-bg-revolve.png',
-	expiry:'2020-10-15 09:00',
+	expiry:'2020-10-15 21:30',
 	learn:'https://www.bose.ca/en_ca/products/speakers/portable_speakers/soundlink_revolve.html?gclsrc=aw.ds&gclid=Cj0KCQjwoJX8BRCZARIsAEWBFMJ6IjuDVQKu7n4SUB-_S0DOfdiQIFrti7ueaX8wu7__HhzFBiAEVA0aAu9PEALw_wcB&gclsrc=aw.ds#v=soundlink_revolve_triple_black'
 }; products.push(revolve);
 
@@ -180,7 +180,7 @@ let kishi = {
 	description:'Universal Gaming Controller for iOS',
 	features:['Familiar console controller experience on your mobile device','Ultra Low Latency','Ergonomic Design'],
 	bgImage:'../images/desktop-bg-kishi.png',
-	expiry:'2020-10-15 10:00',
+	expiry:'2020-10-15 22:00',
 	learn:'https://www.razer.com/ca-en/mobile-controllers/Razer-Kishi/RZ06-03360100-R3U1?gclid=Cj0KCQjwoJX8BRCZARIsAEWBFMKOWUPAg1U6T1QG5DnKeV6iqye0DLgVfUpn3IVRmADY2sSBdtZgkz4aAuAQEALw_wcB'
 }; products.push(kishi);
 
@@ -190,6 +190,6 @@ let boseBundle = {
 	description:'Powerful Potable Speaker and Audio Sunglasses',
 	features:['Two cool bose products for the price of one','Glasses are stylish with amazing audio quality','Portable speaker is waterproof'],
 	bgImage:'../images/desktop-bg-bosebundle.png',
-	expiry:'2020-10-15 11:00',
+	expiry:'2020-10-15 22:30',
 	learn:'https://www.bose.ca/en_ca/products/frames/bose-frames-alto.html'
 }; products.push(boseBundle);
