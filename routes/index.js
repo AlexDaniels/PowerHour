@@ -3,7 +3,7 @@ var nodemailer = require('nodemailer');
 var router = express.Router();
 var counter = 0;
 var mode = 'notStarted';
-var startDate = '2020-10-15 00:30'
+var startDate = '2020-10-15 01:05'
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -30,12 +30,13 @@ router.put('/buynow', function(req,res,next) {
 	let name = req.body.name;
 	let email = req.body.email;
 	let phone = req.body.phone;
+	let model = req.body.model;
 
 	var mailOptions = {
   		from: 'alex@thepowercentre.ca',
   		to: 'alex@thepowercentre.ca',
  		subject: 'New Sale On Power Hour',
-  		text: 'Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone
+  		text: 'Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\nModel: ' + model
 };
 
 	transporter.sendMail(mailOptions, function(error, info){
@@ -89,7 +90,7 @@ let hook9 = {
 	description:'Fishfinder with Transducer',
 	features:['9" Bright LED display','Full chartplotter','Autotuning sonar'],
 	bgImage:'../images/desktop-bg-hook9.png',
-	expiry:'2020-10-15 01:00',
+	expiry:'2020-10-15 01:30',
 	learn:'https://www.lowrance.com/lowrance/type/fishfinders-chartplotters/hook2-9-tripleshot-us-inland'
 }; products.push(hook9);
 

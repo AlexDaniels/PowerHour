@@ -112,16 +112,14 @@ class App extends React.Component {
 		let name = document.getElementById('name').value;
 		let phone = document.getElementById('phone').value;
 		let email = document.getElementById('email').value;
+		let model = this.state.currentProduct.model;
 		$.ajax({
 		    url: "/buynow",
 		    type: "PUT",
 		    dataType: "JSON",
-		    data: {name:name, email:email,phone:phone},
+		    data: {name:name, email:email,phone:phone,model:model},
 		        success: function(response, status, http) {
-		            if (response) {
-		            	console.log('test2')
-		            }
-		            console.log('test1')
+		            console.log('Purchase Sent')
 		    	}
 		});
 		this.setState({mode:'purchaseCompleted'})
